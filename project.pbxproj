@@ -13,6 +13,12 @@
 		3BC484642AED40020023E9E7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BC484632AED40020023E9E7 /* Preview Assets.xcassets */; };
 		3BC484662AED40020023E9E7 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC484652AED40020023E9E7 /* Persistence.swift */; };
 		3BC484692AED40020023E9E7 /* CoinApp2021_swfitui.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3BC484672AED40020023E9E7 /* CoinApp2021_swfitui.xcdatamodeld */; };
+		3BC484742AED40BD0023E9E7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC484732AED40BD0023E9E7 /* HomeView.swift */; };
+		3BC484772AED41070023E9E7 /* ListRowItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC484762AED41070023E9E7 /* ListRowItem.swift */; };
+		3BC4847D2AED49D80023E9E7 /* CoinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4847C2AED49D80023E9E7 /* CoinViewModel.swift */; };
+		3BC4847F2AED4A250023E9E7 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC4847E2AED4A250023E9E7 /* CoinData.swift */; };
+		3BC484832AED4AD00023E9E7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC484822AED4AD00023E9E7 /* APIManager.swift */; };
+		3BC484862AED50BF0023E9E7 /* Color-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC484852AED50BF0023E9E7 /* Color-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +29,12 @@
 		3BC484632AED40020023E9E7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3BC484652AED40020023E9E7 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		3BC484682AED40020023E9E7 /* CoinApp2021_swfitui.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoinApp2021_swfitui.xcdatamodel; sourceTree = "<group>"; };
+		3BC484732AED40BD0023E9E7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		3BC484762AED41070023E9E7 /* ListRowItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowItem.swift; sourceTree = "<group>"; };
+		3BC4847C2AED49D80023E9E7 /* CoinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewModel.swift; sourceTree = "<group>"; };
+		3BC4847E2AED4A250023E9E7 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		3BC484822AED4AD00023E9E7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		3BC484852AED50BF0023E9E7 /* Color-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				3BC4845C2AED40000023E9E7 /* CoinApp2021_swfituiApp.swift */,
+				3BC4846F2AED408C0023E9E7 /* Model */,
+				3BC484712AED40980023E9E7 /* View */,
+				3BC484702AED40920023E9E7 /* ViewModel */,
+				3BC484842AED50AA0023E9E7 /* Extension */,
 				3BC4845E2AED40000023E9E7 /* ContentView.swift */,
 				3BC484602AED40020023E9E7 /* Assets.xcassets */,
 				3BC484652AED40020023E9E7 /* Persistence.swift */,
@@ -71,6 +87,72 @@
 				3BC484632AED40020023E9E7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BC4846F2AED408C0023E9E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BC484812AED4A300023E9E7 /* Manager */,
+				3BC484802AED4A2A0023E9E7 /* Data */,
+				3BC4847E2AED4A250023E9E7 /* CoinData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3BC484702AED40920023E9E7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3BC4847C2AED49D80023E9E7 /* CoinViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3BC484712AED40980023E9E7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3BC484722AED40AB0023E9E7 /* Home */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BC484722AED40AB0023E9E7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				3BC484732AED40BD0023E9E7 /* HomeView.swift */,
+				3BC484752AED40C20023E9E7 /* Component */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		3BC484752AED40C20023E9E7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				3BC484762AED41070023E9E7 /* ListRowItem.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		3BC484802AED4A2A0023E9E7 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3BC484812AED4A300023E9E7 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3BC484822AED4AD00023E9E7 /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		3BC484842AED50AA0023E9E7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3BC484852AED50BF0023E9E7 /* Color-Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +227,13 @@
 			files = (
 				3BC484662AED40020023E9E7 /* Persistence.swift in Sources */,
 				3BC4845F2AED40000023E9E7 /* ContentView.swift in Sources */,
+				3BC4847D2AED49D80023E9E7 /* CoinViewModel.swift in Sources */,
+				3BC484862AED50BF0023E9E7 /* Color-Extension.swift in Sources */,
+				3BC484832AED4AD00023E9E7 /* APIManager.swift in Sources */,
 				3BC484692AED40020023E9E7 /* CoinApp2021_swfitui.xcdatamodeld in Sources */,
+				3BC4847F2AED4A250023E9E7 /* CoinData.swift in Sources */,
+				3BC484772AED41070023E9E7 /* ListRowItem.swift in Sources */,
+				3BC484742AED40BD0023E9E7 /* HomeView.swift in Sources */,
 				3BC4845D2AED40000023E9E7 /* CoinApp2021_swfituiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
